@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+ /* *{
+  
+  border: 2px solid green;
+}  */
+
+body{
+  font-family: inter;
+  background-color: black;
+}
+
+nav{
+    background-color: #20a7d8;
+    height: 80px;
+  
+}
+
+.dropdown img{
+  width: 90px;
+  position: absolute;
+  left: 2%;
+}
+
+.dropdown{
+  text-align: right;
+  display: inline-block;
+  
+}
+
+.dropdown button{
+  background-color:#CE1212;
+  color: #EEEBDD;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+position: absolute;
+  right: 20px;
+  top: 20px;
+  transition: .5s;
+
+}
+
+.dropdown a{
+  font-size: 10px;
+  font-weight: 700;
+  display: block;
+  color: #CE1212;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: .5s;
+
+}
+.dropdown .content{
+  display: none;
+  position: absolute;
+  right: 10px;
+text-align: center;
+  top: 55px;
+  background-color: #e5e5e5;
+  min-width: 100px;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+  
+  
+}
+
+.dropdown:hover .content{
+  display: block;
+}
+.dropdown:hover button{
+  opacity: .5;
+}
+.dropdown a:hover{
+  background-color:grey ;
+  font-size: 12px;
+}
+
+
+
+.rightmenu{
+  display: inline-block;
+  
+}
+
+
+.maincc{
+  background-color: black;
+  width: 100%;
+  height: 700px;
+  
+}
+
+.codingclubdiv{
+  display: grid;
+  width: 100%;
+  height: 500px;
+  place-content: center;
+  font-weight: bold;
+}
+h1{
+  
+  color:#EEEBDD;
+  font-size: 150px;
+  
+
+}
+
+
+
+
+
+
+h3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-140%,250%);
+  color: #CE1212;
+  text-align: center;
+  font-family: inter;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* animatedtext */
+.container {
+  color: #e5e5e5;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: lowercase;
+  height: 10vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%,100%);
+}
+
+.animation {
+  height:30px;
+  overflow:hidden;
+  margin-left: 1rem;
+  
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height:2.81rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first div {
+  background-color:#20a7d8;
+}
+.second div {
+  background-color:#CD921E;
+}
+.third div {
+  background-color:#c10528;
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+
+@media (max-width: 600px) {
+
+
+
+  body {
+    background-color: black;
+  }
+
+  .maincc{
+    height: 800px;
+  }
+
+  nav{
+    margin-bottom: 50px;
+  }
+.logocc{
+  width: 90px;
+}
+
+h1{
+  font-size: 50px;
+}
+.container {
+  color: #e5e5e5;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: lowercase;
+  height: 10vh;
+  
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%,10%);
+}
+h3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-130%,-30%);
+
+  text-align: center;
+  font-family: inter;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+}
+
+@media  (max-width:1040px) and (min-width:600px) 
+ {
+  
+  h1{
+    font-size: 130px;
+  }
+  h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-130%,40%);
+  }
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-15%,30%);
+  }
+}
+
+
+@media  (max-width:900px) and (min-width:600px) 
+ {
+  
+  h1{
+    font-size: 110px;
+  }
+  h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-130%,40%);
+  }
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-15%,30%);
+  }
+}
+
+@media  (max-width:770px) and (min-width:600px) 
+ {
+  
+  h1{
+    font-size: 80px;
+  }
+  h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-130%,-90%);
+  }
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-15%,-10%);
+  }
+}
